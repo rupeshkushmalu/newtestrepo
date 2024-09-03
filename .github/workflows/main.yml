@@ -1,0 +1,12 @@
+name: test-workflow
+on:
+  workflow_dispatch:
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout code
+      - name: Run test
+        run: echo "test"
